@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="fjzhang_@outlook.com">
+    
+    <title>
+        
+            开源项目集锦 |
+        
+        fjzhang&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/font/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/font/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/font/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/font/css/brands.min.css">
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"fjzhang233.top","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"fjzhang's Blog","author":"fjzhang_@outlook.com","avatar":"/images/avatar.svg","logo":"/images/logo.svg","favicon":"/images/logo.svg","url":"https://fjzhang233.top"},"menu":{"home":"/","archives":"/archives","Home":"/","About":"/about"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":"enable","links":{"github":"https://github.com/fjzhangZzzzzz","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"fjzhang_@outlook.com"}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD HH:mm:ss"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true,"enable":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null},"author_label":{"enable":true,"auto":true,"custom_label_list":["Trainee","Engineer","Architect","CTO","BOSS"]}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":false,"site_pv":false,"page_pv":true}},"local_search":{"enable":true,"preload":false},"comment":{"enable":false,"use":"gitalk","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":"fjzhangZzzzzz","github_admins":null,"repository":"hexo-blog-comment","client_id":"92147ad41dd64c72a8f8","client_secret":"6e6a4969cb5778a4e9991ee2420b0aabde90fa84","proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":true},"cdn":{"enable":true,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":false,"site_deploy":{"enable":false,"provider":"aliyun","url":null},"record":{"enable":true,"list":[{"code":"皖ICP备2024062647号-1","link":"https://beian.miit.gov.cn"},{"code":"鄂公网安备42010502001733号","link":"https://beian.mps.gov.cn/#/query/webSearch?code=42010502001733"}]}},"inject":{"enable":false,"css":[null],"js":[null]},"all_minifier":true,"style":{"primary_color":"#0066CC","avatar":"https://avatars.githubusercontent.com/u/21299021?s=64&v=4","favicon":"https://avatars.githubusercontent.com/u/21299021?s=40&v=4","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"https://xpoet.cn/images/bg.svg","description":"爱我所有","hitokoto":true},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"code_copy":{"enable":false,"style":"default"},"copyright_info":{"enable":true},"root":"","source_data":{},"version":"4.2.3"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               fjzhang&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                首页
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                归档
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                关于
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            首页
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            归档
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                            关于
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        开源项目集锦
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.svg">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">fjzhang_@outlook.com</span>
+                                
+                                    <span class="author-badge">Lv1</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2022-04-30 06:58:05</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Thu Oct 10 2024 14:10:20 GMT+0000">2024-10-10 22:10:20</span>
+            </span>
+        
+
+        
+
+        
+
+        
+        
+            <span class="meta-info-item post-wordcount">
+                <i class="icon fas fa-file-word"></i>&nbsp;<span>2.8k 字</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-min2read">
+                <i class="icon fas fa-clock"></i>&nbsp;<span>10 分钟</span>
+            </span>
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="健康生活"><a href="#健康生活" class="headerlink" title="健康生活"></a>健康生活</h1><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/996icu/996.ICU" >996.ICU<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><h2 id="CS"><a href="#CS" class="headerlink" title="CS"></a>CS</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/TIM168/technical_books" >TIM168&#x2F;technical_books<i class="fas fa-external-link-alt"></i></a>，技术书籍大杂烩</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md" >自学计算机科学<i class="fas fa-external-link-alt"></i></a>，编程、计算机系统构造、算法与数据结构、数学知识、操作系统、计算机网络、数据库、编程语言与编译器、分布式系统</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://csdiy.wiki/" >CS 自学指南，包含工具、国外高质量 CS 课程、经典书籍推荐等<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/danistefanovic/build-your-own-x" >build-your-own-x - What I cannot create, I do not understand<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/lib-pku/libpku" >libpku - 贵校课程资料民间整理<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sindresorhus/awesome" >Awesome lists about all kinds of interesting topics<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/xioacd99/study-is-wonderful" >一些数学&#x2F;计算机课程收集列表<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/facundoolano/software-papers" >软件工程相关论文收集<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System" >How to Make a Computer Operating System<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://os.phil-opp.com/zh-CN/" >Writing an OS in Rust - 用 Rust 写一个最小操作系统教程<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://rcore-os.github.io/rCore-Tutorial-Book-v3/index.html" >如何 从零开始 用 Rust 语言写一个基于 RISC-V 架构的 类 Unix 内核<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLrGN1Qi7t67V-9uXzj4VSQCffntfvn42v" >内核开发系列视频教程<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/yanull/os-guide-cn" >os-guide-cn - 从零开始制作一个操作系统<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://warsus.github.io/lions-/" >Unix v6 操作系统评注<i class="fas fa-external-link-alt"></i></a></li>
+<li>每个程序员都应该了解的内存知识<ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://lrita.github.io/2018/06/10/programmer-should-know-about-memory-0/" >每个程序员都应该了解的内存知识-0<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://lrita.github.io/2018/06/30/programmer-should-know-about-memory-1/" >每个程序员都应该了解的内存知识-1<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://lrita.github.io/2022/04/01/programmer-should-know-about-memory-2/" >每个程序员都应该了解的内存知识-2<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://lrita.github.io/2022/06/20/programmer-should-know-about-memory-3/" >每个程序员都应该了解的内存知识-3<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+</li>
+</ul>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sunym1993/flash-linux0.11-talk" >像小说一样品读 Linux 0.11 核心代码<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html" >系统管理员应该了解的 30 个 Linux 系统监视工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/ehids/slide" >Linux eBPF 资料集锦<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://mesonwang.com/2020/04/10/Linux-Boot-Process/" >Linux 启动过程分析<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://blog.arstercz.com/introduction_to_linux_dynamic_tracing/" >Linux 系统动态追踪技术介绍<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://riboseyim.gitbook.io/perf/" >The Linux Perf Master<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://qianngchn.github.io/wiki/7.html" >Linux 常用命令行小技巧<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://ty-chen.github.io/categories/Linux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E5%AD%A6%E4%B9%A0/" >Linux 操作系统内核学习<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/linuxkerneltravel/linux_kernel_wiki" >Linux 内核学习资料<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://www.kerneltravel.net/book/" >深入分析 Linux 内核源码<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.dedoimedo.com/computers/crash-book.html#download" >Linux Kernel Crash Book<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://snowgo.top/2022/07/11/%E5%A6%82%E4%BD%95%E2%80%9C%E5%BF%AB%E5%87%86%E7%8B%A0%E2%80%9D%E6%89%BE%E5%88%B0%E7%B3%BB%E7%BB%9F%E5%86%85%E5%AD%98%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%9F/" >如何快准狠找到 Linux 系统内存的问题<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://arthurchiao.art/blog/linux-net-stack-zh/" >Linux 网络栈原理、监控与调优<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://blog.maxgio.me/posts/linux-scheduler-journey/" >A journey into the Linux scheduler<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.bmpi.dev/dev/deep-in-program-language/how-to-implement-concurrency/os-scheduling/?continueFlag=39a961c4dfaac5ca5ab3fe443546c2fd" >编程语言是如何实现并发的之操作系统篇<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://beta.hackfoldr.org/linux" >Linux 核心设计<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/labuladong/fucking-algorithm" >fucking-algorithm - 算法小抄<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://developer.aliyun.com/article/779523?source=5176.11533457&userCode=e4nptrfl" >一文搞懂分治算法<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="编程语言"><a href="#编程语言" class="headerlink" title="编程语言"></a>编程语言</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><p><a class="link"   target="_blank" rel="noopener" href="https://github.com/practical-tutorials/project-based-learning" >Project Based Learning - 基于工程实践的主流编程语言学习<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://gustedt.gitlabpages.inria.fr/modern-c/" >Modern C<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/salmer/CppDeveloperRoadmap" >C++ Developer Roadmap<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/Cpp-Club/Cxx_HOPL4_zh" >在拥挤和变化的世界中茁壮成长：C++ 2006–2020<i class="fas fa-external-link-alt"></i></a> - C++ 之父 Bjarne Stroustrup 的 HOPL4 论文的中文版</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/wuye9036/CppTemplateTutorial" >C++ Template 进阶指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/forhappy/Cplusplus-Concurrency-In-Practice" >C++ 并发编程指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/rigtorp/awesome-modern-cpp" >Awesome Modern C++ - 现代 C++ 的资源集合<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/changkun/modern-cpp-tutorial" >Modern C++ Tutorial: C++11&#x2F;14&#x2F;17&#x2F;20 On the Fly<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/qinguoyi/TinyWebServer" >TinyWebServer - 轻量级 C++ Web 服务器实践及说明讲解<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/huihut/interview" >C&#x2F;C++ 技术面试基础知识总结<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/Light-City/CPlusPlusThings" >C++ 那些事 - 从入门到进阶<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/yuesong-feng/30dayMakeCppServer" >30 天自制 C++服务器<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/downdemo/Cpp-Concurrency-in-Action-2ed" >C++ Concurrency in Action 2ed 笔记 - C++11&#x2F;14&#x2F;17&#x2F;20 多线程，掌握操作系统原理，解锁并发编程技术<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://majorli.github.io/algo_guide/index.html" >C++ 算法编程指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000039650181" >C++ 性能优化背后的方法论：TMAM<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://cntransgroup.github.io/EffectiveModernCppChinese/" >Effective Modern C++<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.yuque.com/jtcheng/emcpp" >Effective Modern C++ 解读笔记<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/rachitiitr/modern-cpp-tricks" >Modern Cpp Tricks<i class="fas fa-external-link-alt"></i></a>，一些 C++ 相关的开发技巧</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/Celthi/effective-debugging-zh" >Effective Debugging<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://blog.gibson.sh/2017/11/26/creating-portable-linux-binaries/" >How to create portable Linux binaries (even if you need a recent compiler)<i class="fas fa-external-link-alt"></i></a>，如何创建可移植的 Linux 二进制文件</li>
+</ul>
+<h3 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://effective-shell.com/" >Effective Shell<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md" >命令行的艺术<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://archlinuxstudio.github.io/ShellTutorial/#/" >Linux 命令行与 Shell 脚本教程，精炼实用，仅高频用法<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://kodango.com/bash-pitfalls-part-1" >Bash 编程易犯的错误<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/zhiwehu/Python-programming-exercises" >Python-programming-exercises - 100+ Python challenge programming exercises.<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/jackfrued/Python-100-Days" >Python - 100 天从新手到大师<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://fasionchan.com/python-source/" >Python 源码剖析<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://python3-cookbook.readthedocs.io/zh_CN/latest/" >Python Cookbook in Chinese<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://golang.coding3min.com/" >Go 语言精进之路<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://golang3.eddycjy.com/" >Go 语言设计哲学<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/dariubs/GoBooks" >dariubs&#x2F;GoBooks<i class="fas fa-external-link-alt"></i></a>，Golang 书籍列表</li>
+</ul>
+<h3 id="Rust"><a href="#Rust" class="headerlink" title="Rust"></a>Rust</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sunface/rust-course" >Rust 语言圣经（中文）<i class="fas fa-external-link-alt"></i></a> - {<a class="link"   target="_blank" rel="noopener" href="https://course.rs/about-book.html" >在线阅读<i class="fas fa-external-link-alt"></i></a>}</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sunface/rust-by-practice" >rust-by-practice - Rust 实战习题集<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://zjp-cn.github.io/api-guidelines/about.html" >Rust API 编写指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/LukeMathWalker/zero-to-production" >从零开发到上线 - Rust 后端 API 开发<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://logiase.github.io/The-Embedded-Rust-Book-CN/intro/index.html" >嵌入式 Rust 之书<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/pretzelhammer/rust-blog/blob/master/posts/translations/zh-hans/tour-of-rusts-standard-library-traits.md" >Rust 标准库特性指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://aminb.gitbooks.io/rust-for-c/content/index.html" >Rust for C++ Programmers<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/Byron/gitoxide" >Byron&#x2F;gitoxide<i class="fas fa-external-link-alt"></i></a>，纯 Rust 实现的 git</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/theseus-os/Theseus" >theseus-os&#x2F;Theseus<i class="fas fa-external-link-alt"></i></a>，一个用 Rust 从头开始编写的新的试验性的操作系统</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/TheAlgorithms/Rust" >TheAlgorithms&#x2F;Rust<i class="fas fa-external-link-alt"></i></a>，Rust 实现的各种算法</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/hemashushu/practice-toy-os-riscv-rust" >Practice Toy OS - RISC-V - Rust<i class="fas fa-external-link-alt"></i></a>，从零开始用 Rust 语言写一个基于 RISC-V 架构的类 Unix 内核</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://awesome-kusion.github.io/rust-code-book/" >Rust 源码分析<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/Asabeneh/30-Days-Of-JavaScript" >30 Days Of JavaScript<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/stephentian/33-js-concepts" >33 个 JS 概念学习指南<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/dunwu/db-tutorial" >db-tutorial - 数据库教程，包含 MySQL、NoSQL、MongoDB、Elasticsearch、Redis 等<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://developer.aliyun.com/article/784800?source=5176.11533457&userCode=e4nptrfl" >从零开始写数据库：500 行代码实现 LSM 数据库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://cstack.github.io/db_tutorial/" >Let’s Build a Simple Database<i class="fas fa-external-link-alt"></i></a> 使用 C 构建类 sqlite 数据库</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://use-the-index-luke.com/" >USE THE INDEX<i class="fas fa-external-link-alt"></i></a>，面向开发者的数据库性能指导</li>
+</ul>
+<h2 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/lichuang/storage-paper-reading-cn" >存储（分布式、存储引擎等）领域相关的论文阅读笔记<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://ddia.qtmuniao.com/#/" >DDIA<i class="fas fa-external-link-alt"></i></a>，一本分布式系统、数据库、大数据处理的经典必读书籍</li>
+</ul>
+<h2 id="网络安全"><a href="#网络安全" class="headerlink" title="网络安全"></a>网络安全</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/PeiQi0/PeiQi-WIKI-Book" >面对网络安全从业者的知识库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/tmplink/ipv6" >ipv6<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="http://www.52im.net/thread-1003-1-1.html" >不为人知的网络编程系列<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.hackthebox.com/" >Hack The Box<i class="fas fa-external-link-alt"></i></a>，一个动态增长的黑客社区，通过游戏化的实践培训体验，将你的网络安全技能提升到一个新的水平。在有效的实践培训中边做边学</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://blog.bytebytego.com/p/how-to-design-a-secture-web-api-access" >How to design a secure web API access for your website?<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://infosecwriteups.com/cyber-security-detection-frameworks-b5fec0c93195" >Cyber Security Detection Frameworks<i class="fas fa-external-link-alt"></i></a>，网络安全检测框架</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/vulhub/vulhub" >vulhub&#x2F;vulhub<i class="fas fa-external-link-alt"></i></a>，一个面向大众的开源漏洞靶场，无需 docker 知识，简单执行一条命令即可编译、运行一个完整的漏洞靶场镜像</li>
+</ul>
+<h2 id="游戏"><a href="#游戏" class="headerlink" title="游戏"></a>游戏</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=1bAb1CfgZrs" >Multi-Threaded Game Framework in C | Making a Game in C<i class="fas fa-external-link-alt"></i></a>，Youtube</li>
+</ul>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://book.crifan.org/books/crawl_your_data_spider_technology/website/" >爬取你要的数据：爬虫技术<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://markrepo.github.io/commands/2018/06/23/tcpdump/" >tcpdump 使用总结<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://llh911001.gitbook.io/mostly-adequate-guide-chinese/" >函数式编程指北<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://linkedin.github.io/school-of-sre/" >School of SRE<i class="fas fa-external-link-alt"></i></a><ul>
+<li>linkedin 出品的 SRE（Sites Reliability Engineer） 入门教程</li>
+<li>101 包括 linux 基础、Git、linux 网络、python、数据库（关系数据库、nosql 和大数据的基础介绍）、系统设计、监控度量、安全相关的内容。</li>
+<li>102 包括 linux 中高级（包括容器技术 docker、k8s）、网络、系统设计、排查故障和性能改进、持续集成等内容</li>
+</ul>
+</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/wxlscm/raspberry_tutorial" >树莓派编程实用教程<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.cloudskillsboost.google/paths" >Google 为数据工程师、机器学习工程师、云工程师、云架构师、数据分析师等提供的免费学习路线<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://www.cs.utexas.edu/~dahlin/Classes/UGOS/reading/gdb-ref.pdf" >GDB 快速引用手册<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://datawhalechina.github.io/fun-rec/#/" >推荐系统入门教程 - 需要具有机器学习基础<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://gotgit.readthedocs.io/en/latest/#Git" >Git 权威指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://zh-style-guide.readthedocs.io/zh_CN/latest/index.html" >中文技术文档写作风格指南<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://hoochanlon.github.io/helpdesk-guide/" >桌维网管实典<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://cbea.ms/git-commit/" >How to Write a Git Commit Message<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/yikeke/tao-of-programming" >编程之道 中英双语版<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://coladrill.github.io/2019/03/29/%E6%90%9C%E7%B4%A2%E7%9A%84%E5%8E%9F%E7%90%86/" >搜索的原理 - 爬虫、索引、排序、检索的过程<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://sideproject.guide/" >Side Project 指南 - 业余项目<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://coolshell.cn/articles/21672.html" >做系统架构的一些原则<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021606168" >深入剖析 Kafka<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000021606168" >Why’s THE Design - 为什么这么设计系列<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://themediocreprogrammer.com/build/html/the_mediocre_programmer.html" >The Mediocre Programmer - 平庸的程序员，一本如何成为更好的程序员的书<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://thenewstack.io/an-engineers-best-tips-for-writing-documentation-devs-love/" >An Engineer’s Best Tips for Writing Documentation Devs Love<i class="fas fa-external-link-alt"></i></a>，如何编写开发者喜欢的文档</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://wangdoc.com/ssh/index.html" >SSH 教程<i class="fas fa-external-link-alt"></i></a>，介绍 SSH（主要是它的实现 OpenSSH）的概念和基本用法，也可以当作手册查询</li>
+</ul>
+<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/wsdjeg/Learn-Vim_zh_cn" >Learn-Vim(the Smart Way) 中文翻译<i class="fas fa-external-link-alt"></i></a>，从概念到进阶技巧</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://vimskill.readthedocs.io/index.html" >VimSkill<i class="fas fa-external-link-alt"></i></a>，通过 vim 处理文本</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://docs.lapce.dev/" >Lapce - Rust 编写的开源编辑器，利用原生 GUI 和 GPU 渲染，支持 Window&#x2F;Linux&#x2F;macOS<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/WerWolv/ImHex" >WerWolv&#x2F;ImHex<i class="fas fa-external-link-alt"></i></a>，一个 16 进制编辑器，面向逆向工程师、程序员和在凌晨 3 点工作时重视视网膜的人的十六进制编辑器</li>
+</ul>
+<h2 id="分析调试"><a href="#分析调试" class="headerlink" title="分析调试"></a>分析调试</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/koute/bytehound" >Bytehound - Linux 内存分析工具<i class="fas fa-external-link-alt"></i></a><ul>
+<li>可用于分析内存泄漏，查看内存消耗确切位置，识别临时分配和内存碎片分析。收集跟踪每个分配和释放，以及调用堆栈</li>
+<li>支持导出多种格式：JSON、Heaptrack，自带 Web GUI 可用于分析</li>
+</ul>
+</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/rr-debugger/rr" >rr - 一个轻量级记录、回放和调试应用程序执行的工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/google/orbit" >orbit - C&#x2F;C++ 性能分析工具，可视化复杂应用程序的执行流程<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/horsicq/XPEViewer" >horsicq&#x2F;XPEViewer<i class="fas fa-external-link-alt"></i></a>，跨平台的 PE 文件查看&#x2F;编辑器</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/rapiz1/catp" >rapiz1&#x2F;catp<i class="fas fa-external-link-alt"></i></a>，纯 Rust 实现的小工具，显示某个后台程序的输出，原理是用 ptrace 拦截系统调用里的 syscall write</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://begriffs.com/posts/2022-07-17-debugging-gdb-ddd.html" >使用 GDB 和 DDD 进行愉快的调试<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/joewalnes/websocketd" >websocketd - 包装现有命令行程序并通过 websocket 访问的命令行工具<i class="fas fa-external-link-alt"></i></a><ul>
+<li>被包装的应用程序只需要处理标准输入输出，无需网络库，不限语言，即可由该命令行工具构建具有 websocket 功能的应用程序</li>
+</ul>
+</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/mermaid-js/mermaid" >mermaid - 基于 Javascript 的文本化图表生成工具<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/multiarch/qemu-user-static" >qemu-user-static - 开启 Linux 多架构执行能力（基于 QEMU 和 binfmt_misc）的容器<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/plantuml/plantuml" >PlantUML - 从文本描述生成 UML 图<i class="fas fa-external-link-alt"></i></a>，<a class="link"   target="_blank" rel="noopener" href="https://www.planttext.com/" >在线版本<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/alfem/telegram-download-daemon" >telegram-download-daemon - Telegram 大文件下载，作为第三方 Telegram 客户端实现，可作为后台进程进行下载<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/fatedier/frp" >frp - 内网穿透，支持 TCP&#x2F;UDP&#x2F;HTTP&#x2F;HTTPS，支持 P2P<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sphinx-doc/sphinx" >sphinx - 文档生成工具，支持 Python&#x2F;C++，支持多种输出格式 HTML&#x2F;text&#x2F;LaTeX&#x2F;PDF<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/gnab/remark" >remark - markdown 驱动的浏览器幻灯片工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/hakimel/reveal.js" >reveal.js - 用于创建演示文稿的 HTML 演示框架<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/AykutSarac/jsonvisio.com" >jsonvisio - json 可视化<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/tjko/jpegoptim" >jpegoptim - JPEG 文件压缩工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://codetoimg.com/" >code2img<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/lsyncd/lsyncd" >linux 文件同步工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://iconpark.oceanengine.com/official" >ByteDance IconPark<i class="fas fa-external-link-alt"></i></a>，字节跳动图标资源库</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/charmbracelet/gum" >charmbracelet&#x2F;gum<i class="fas fa-external-link-alt"></i></a>，shell 脚本工具，包装了很多 shell 脚本里需要交互操作或格式化输出的工作</li>
+</ul>
+<h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/public-apis/public-apis" >public-apis&#x2F;public-apis<i class="fas fa-external-link-alt"></i></a>，免费公开 API 收集</li>
+</ul>
+<h1 id="开源库"><a href="#开源库" class="headerlink" title="开源库"></a>开源库</h1><h2 id="C-C"><a href="#C-C" class="headerlink" title="C&#x2F;C++"></a>C&#x2F;C++</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/jobbole/awesome-cpp-cn" >awesome-cpp - C++ 资源大全中文版<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="网络-1"><a href="#网络-1" class="headerlink" title="网络"></a>网络</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/libuv/libuv" >libuv<i class="fas fa-external-link-alt"></i></a><ul>
+<li>跨平台的异步 IO 库，最初用于 Node.js，有多种第三方开发的语言绑定，包括 Lua&#x2F;Python&#x2F;Go&#x2F;C++&#x2F;C# 等等等</li>
+<li>支持异步 TCP&#x2F;UDP 套接字、异步 DNS 解析、异步文件和文件系统操作、文件系统事件、IPC（使用 Unix 域套接字和 Windows 命名管道）、子进程、线程池、信号处理、高精度时钟、线程和同步原语</li>
+</ul>
+</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/python-telegram-bot/python-telegram-bot" >python-telegram-bot - Telegram Bot API 的纯 Python 封装<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/ipkn/crow" >crow - 用于 Web 的微服务框架<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sogou/workflow" >workflow - C++ 并行计算和异步网络引擎<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/libcpr/cpr" >cpr - libcurl 的 C++ 封装库，风格类似 Python Request 库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/ZLMediaKit/ZLMediaKit" >ZLMediaKit&#x2F;ZLMediaKit<i class="fas fa-external-link-alt"></i></a>，一个基于 C++11 的高性能运营级流媒体服务框架</li>
+</ul>
+<h3 id="存储-1"><a href="#存储-1" class="headerlink" title="存储"></a>存储</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/google/leveldb" >leveldb - 快速键值存储库<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="GUI"><a href="#GUI" class="headerlink" title="GUI"></a>GUI</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/ocornut/imgui" >imgui - 可移植的即时模式 GUI 库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/raysan5/raygui" >raygui - 简单易用的即时模式 GUI 库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/juce-framework/JUCE" >juce-framework&#x2F;JUCE<i class="fas fa-external-link-alt"></i></a>，一个开源的跨平台 C++ 应用程序框架，用于创建高质量的桌面和移动应用程序</li>
+</ul>
+<h3 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/flashlight/flashlight" >flashlight - 机器学习库<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h3 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/CLIUtils/CLI11" >CLI11 - C++11 命令行解析工具<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/zeux/pugixml" >pugixml - XML 处理库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/antirez/linenoise" >linenoise - 最小 readline 替代库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/fmtlib/fmt" >fmt - 格式化库<i class="fas fa-external-link-alt"></i></a>，C++ 20 std::format 的实现，提供一种 C stdio 和 C++ iostream 的快速安全方案</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/vincentlaucsb/csv-parser" >vincentlaucsb&#x2F;csv-parser<i class="fas fa-external-link-alt"></i></a>，csv 读、写、解析库</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/google/flatbuffers" >google&#x2F;flatbuffers<i class="fas fa-external-link-alt"></i></a>，一个跨平台序列化库，旨在最大限度地提高内存效率。 允许直接访问序列化数据而无需先对其进行解析&#x2F;解包，同时仍具有出色的向前&#x2F;向后兼容性。</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/lfreist/hwinfo" >lfreist&#x2F;hwinfo<i class="fas fa-external-link-alt"></i></a>，使用 C++ 获取硬件信息的跨平台解决方案</li>
+</ul>
+<h2 id="Go-1"><a href="#Go-1" class="headerlink" title="Go"></a>Go</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/avelino/awesome-go" >Awesome Go<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="Shell-1"><a href="#Shell-1" class="headerlink" title="Shell"></a>Shell</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/kward/shunit2" >shUnit2 - bash 单元测试框架<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/sigoden/argc" >argc - 用于 sh&#x2F;bash 的命令行解析工具<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<h2 id="Rust-1"><a href="#Rust-1" class="headerlink" title="Rust"></a>Rust</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/fdehau/tui-rs" >tui-rs - 用于构建终端用户界面和仪表盘的 Rust 库<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/crossbeam-rs/crossbeam" >并发编程工具集<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/phiresky/sqlite-zstd" >phiresky&#x2F;sqlite-zstd<i class="fas fa-external-link-alt"></i></a>，sqlite 压缩工具</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/cloudwego/volo" >cloudwego&#x2F;volo<i class="fas fa-external-link-alt"></i></a>，字跳开源的一个高性能和强可扩展性的 Rust RPC 框架，可帮助开发人员构建微服务</li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://github.com/yewstack/yew" >yewstack&#x2F;yew<i class="fas fa-external-link-alt"></i></a>，一个设计先进的 <a class="link"   target="_blank" rel="noopener" href="https://www.rust-lang.org/" >Rust<i class="fas fa-external-link-alt"></i></a> 框架，目的是使用 <a class="link"   target="_blank" rel="noopener" href="https://webassembly.org/" >WebAssembly<i class="fas fa-external-link-alt"></i></a> 来创建多线程的前端 web 应用</li>
+</ul>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/10/10/hello-world/"
+                                   title="Hello World"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2022/04/23/yuque/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5%20glibc%EF%BC%9F/"
+                                   title="为什么不建议静态链接 glibc？"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">为什么不建议静态链接 glibc？</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%81%A5%E5%BA%B7%E7%94%9F%E6%B4%BB"><span class="nav-number">1.</span> <span class="nav-text">健康生活</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">2.</span> <span class="nav-text">学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CS"><span class="nav-number">2.1.</span> <span class="nav-text">CS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.2.</span> <span class="nav-text">操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">2.2.1.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95"><span class="nav-number">2.3.</span> <span class="nav-text">算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80"><span class="nav-number">2.4.</span> <span class="nav-text">编程语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E7%94%A8"><span class="nav-number">2.4.1.</span> <span class="nav-text">通用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C"><span class="nav-number">2.4.2.</span> <span class="nav-text">C</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-1"><span class="nav-number">2.4.3.</span> <span class="nav-text">C++</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell"><span class="nav-number">2.4.4.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">2.4.5.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Go"><span class="nav-number">2.4.6.</span> <span class="nav-text">Go</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rust"><span class="nav-number">2.4.7.</span> <span class="nav-text">Rust</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javascript"><span class="nav-number">2.4.8.</span> <span class="nav-text">Javascript</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">2.5.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%98%E5%82%A8"><span class="nav-number">2.6.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F"><span class="nav-number">2.7.</span> <span class="nav-text">分布式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="nav-number">2.8.</span> <span class="nav-text">网络安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F"><span class="nav-number">2.9.</span> <span class="nav-text">游戏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">2.10.</span> <span class="nav-text">其它</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-number">3.</span> <span class="nav-text">工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%B0%83%E8%AF%95"><span class="nav-number">3.2.</span> <span class="nav-text">分析调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C"><span class="nav-number">3.3.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">3.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B5%84%E6%BA%90"><span class="nav-number">4.</span> <span class="nav-text">资源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E6%BA%90%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">开源库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-C"><span class="nav-number">5.1.</span> <span class="nav-text">C&#x2F;C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C-1"><span class="nav-number">5.1.1.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%82%A8-1"><span class="nav-number">5.1.2.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GUI"><span class="nav-number">5.1.3.</span> <span class="nav-text">GUI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-number">5.1.4.</span> <span class="nav-text">机器学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-1"><span class="nav-number">5.1.5.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go-1"><span class="nav-number">5.2.</span> <span class="nav-text">Go</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell-1"><span class="nav-number">5.3.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rust-1"><span class="nav-number">5.4.</span> <span class="nav-text">Rust</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2024</span>&nbsp;-&nbsp;2024
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">fjzhang_@outlook.com</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+
+    
+        <div class="record-info info-item">
+            
+                
+                    <div class="record-item border-box">
+                        <a class=""
+                           target="_blank"
+                           href="https://beian.miit.gov.cn"
+                        >
+                            皖ICP备2024062647号-1
+                        </a>
+                    </div>
+                
+            
+                
+                    <div class="record-item border-box">
+                        <a class=""
+                           target="_blank"
+                           href="https://beian.mps.gov.cn/#/query/webSearch?code=42010502001733"
+                        >
+                            鄂公网安备42010502001733号
+                        </a>
+                    </div>
+                
+            
+        </div>
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%81%A5%E5%BA%B7%E7%94%9F%E6%B4%BB"><span class="nav-number">1.</span> <span class="nav-text">健康生活</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0"><span class="nav-number">2.</span> <span class="nav-text">学习</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CS"><span class="nav-number">2.1.</span> <span class="nav-text">CS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">2.2.</span> <span class="nav-text">操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linux"><span class="nav-number">2.2.1.</span> <span class="nav-text">Linux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%97%E6%B3%95"><span class="nav-number">2.3.</span> <span class="nav-text">算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80"><span class="nav-number">2.4.</span> <span class="nav-text">编程语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E7%94%A8"><span class="nav-number">2.4.1.</span> <span class="nav-text">通用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C"><span class="nav-number">2.4.2.</span> <span class="nav-text">C</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C-1"><span class="nav-number">2.4.3.</span> <span class="nav-text">C++</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shell"><span class="nav-number">2.4.4.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python"><span class="nav-number">2.4.5.</span> <span class="nav-text">Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Go"><span class="nav-number">2.4.6.</span> <span class="nav-text">Go</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rust"><span class="nav-number">2.4.7.</span> <span class="nav-text">Rust</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Javascript"><span class="nav-number">2.4.8.</span> <span class="nav-text">Javascript</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">2.5.</span> <span class="nav-text">数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%98%E5%82%A8"><span class="nav-number">2.6.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F"><span class="nav-number">2.7.</span> <span class="nav-text">分布式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="nav-number">2.8.</span> <span class="nav-text">网络安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B8%B8%E6%88%8F"><span class="nav-number">2.9.</span> <span class="nav-text">游戏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">2.10.</span> <span class="nav-text">其它</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7"><span class="nav-number">3.</span> <span class="nav-text">工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E8%BE%91%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90%E8%B0%83%E8%AF%95"><span class="nav-number">3.2.</span> <span class="nav-text">分析调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C"><span class="nav-number">3.3.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">3.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B5%84%E6%BA%90"><span class="nav-number">4.</span> <span class="nav-text">资源</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E6%BA%90%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">开源库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-C"><span class="nav-number">5.1.</span> <span class="nav-text">C&#x2F;C++</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C-1"><span class="nav-number">5.1.1.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%98%E5%82%A8-1"><span class="nav-number">5.1.2.</span> <span class="nav-text">存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GUI"><span class="nav-number">5.1.3.</span> <span class="nav-text">GUI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-number">5.1.4.</span> <span class="nav-text">机器学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96-1"><span class="nav-number">5.1.5.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Go-1"><span class="nav-number">5.2.</span> <span class="nav-text">Go</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell-1"><span class="nav-number">5.3.</span> <span class="nav-text">Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Rust-1"><span class="nav-number">5.4.</span> <span class="nav-text">Rust</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/utils.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/header-shrink.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/back2top.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/toggle-theme.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/code-block.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/main.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/libs/anime.min.js"></script>
+
+<!-- local search -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/local-search.min.js"></script>
+
+
+<!-- lazyload -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/lazyload.min.js"></script>
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/post/post-helper.min.js"></script>
+
+        <!-- toc -->
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/post/toc.min.js"></script>
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-theme-keep/4.2.3/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
