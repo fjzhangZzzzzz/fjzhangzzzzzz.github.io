@@ -1,0 +1,9 @@
+/* 全局字体 */
+body {
+  font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 代码字体 */
+pre, code {
+  font-family: "LXGW WenKai Mono", "Source Code Pro", Consolas, Monaco, "Courier New", monospace;
+}
