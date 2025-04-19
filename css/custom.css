@@ -7,3 +7,16 @@ body {
 pre, code {
   font-family: "LXGW WenKai Mono", "Source Code Pro", Consolas, Monaco, "Courier New", monospace;
 }
+
+/* 当配置为不显示时，隐藏对应元素 */
+body[data-powered-by="false"] [class*="powered"],
+body[data-powered-by="false"] [class*="theme-info"],
+body[data-powered-by="false"] .footer-inner > div:not(:first-child) {
+    display: none !important;
+}
+
+/* 当配置为不显示时，调整版权信息样式 */
+body[data-powered-by="false"] .footer-inner > div:first-child {
+    border-top: none !important;
+    padding-top: 0 !important;
+}
